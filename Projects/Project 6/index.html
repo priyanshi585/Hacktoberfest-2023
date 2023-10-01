@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flexbox
+food ordering page */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cardflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height:350px ;
+    padding: 10px; 
+    transition: .2s;
+    /* border: 1px solid lightgray; */
+    border-radius: 14px;
+}
+.card:hover{
+    width: 350px;
+    height: 400px;
+    box-shadow: 1px 0px 1px 1px  gray;
+}
+.dots{
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 45%;
+    bottom: 8%;
+}
+.arrow{
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    right: 30px;
+    top: 45%;
+
+}
+.arrow:hover{
+    position: absolute;
+    top: 35%;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+}
+.name{
+    position: absolute;
+    left: 10px;
+    top: 250px;
+    font-size: larger;
+}
+.rating{
+    position: absolute;
+    right: 15px;
+    top: 230px;
+    
+}
+.star{
+    position: absolute;
+    right: 45px;
+    top: 255px;
+}
+.name2{
+    position: absolute;
+    left: 10px;
+    top: 260px;
+}
+.heart{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    width: 25px;
+    height: 25px;
+    color:rgba(255, 0, 0, 0.477);
+}
+.heart:hover{
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+.card-img{
+    width:100%;
+    height: 240px;
+    border-radius: 14px;
+}
+.flexbox{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* justify content => horizonatal aligment */
+/* align-items => vertical alignment */
+
+.post{
+    margin: 50px auto;
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    padding: 10px;
+}
+.user{
+    height: 50px;
+    border-radius: 50%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+.user-name{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(83, 83, 83);
+}
+.name{
+    margin: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    flex-wrap: wrap;
+    align-items: center;
+    width:  1400px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* gap: 100px; */
+    margin: 30px auto;
+    justify-content: center;
+    gap: 380px;
+}
+.logo{
+    height: 24px;
+}
+.btn{
+    position: relative;
+    display: flex;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 50%;
+    /* border: 1px solid lightgray; */
+    background-color: #fff;
+    font-size: 16px;
+}
+.search{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+
+    right:30px;
+    padding: 8px ;
+    top: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+
+}
+.search:hover{
+    color:white;
+    background-color:black;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    color: rgba(255, 0, 0, 0.512);
+}
+.menu{
+    padding: 10px;
+    display: flex;
+    
+    justify-content: center;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+.menuimg{
+    width:25px;
+    height: 25px;
+    
+}
+.menudisc{
+    text-align: center;
+    font-size:small ;
+}
+.menudisc:hover{
+    text-decoration:4px underline gray;
+    height: 4px;
+}
+.btn-des{
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding: 5px; */
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    border:1px solid lightgray;
+}
+.setting{
+    display: flex;
+    position: relative;
+}
+.set{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: -45px;
+    
+
+}
+.pic{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    background-color: rgb(118, 115, 115);
+    position: absolute;
+    right: -50px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.icon{
+    position: absolute;
+    width: 250px;
+    right: 0;
+    height: 250px;
+    border: 1px solid lightgray;
+    color: white;
+    background-color: rgb(247, 91, 91);
+    border-radius:100%;
+}
+@media(min-width:1000px){
+    .logo{
+    width: 150px;
+    height: 50px;
+    
+}
+
+}
+.display{
+    display: flex;
+    right: 0;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: smaller;
+    text-align: center;
+    align-items: center;
+}
+
+.switch{
+    
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    top: 50px;
+    color: gray;
+
+}
+.filter{
+    border: 1px solid lightgray;
+    border-radius: 20%;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    align-items: center;
+
+}
+.filter-img{
+    width: 20px;
+    height: 20px;
+}
+.ayh{
+    transition: .5s;
+}
+.ayh:hover{
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+
+}
+.map{
+    width: 150px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 20px;
+    top: 85%;
+    left: 45%;
+    border-radius: 40px;
+}
+.map:hover{
+    width: 200px;
+    background-color:black;
+    color: white;
+    font-size: larger;
+    border-radius: 20px;
+}
+
+    </style>
+</head>
+<body class="body">
+    <nav class="navbar">
+        <img class="logo" src="Airbnb_logo_PNG3.png"  alt="">
+        <div class="btn">
+            <button class="btn-des"> Anywhere | Any week | Add guest    
+                <svg class="search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </button>
+            
+            
+              <!-- <img src="icons8-search.svg" alt="" class="icon"> -->
+        </div>
+        <div class="setting">
+            <h3 class="ayh">Airbnb your home</h3>
+            <svg class="set" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+              </svg>
+            <svg class="pic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+            </svg>
+
+          
+        </div>
+        
+    </nav>
+    <hr>
+    <div class="flexbox">
+        <div class="menu">
+            <div>
+                <img src="i9.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Amazing views</p>
+            </div>
+            <div>
+                <img src="i8.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Farms</p>
+            </div>
+            <div>
+                <img src="i7.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Amazing pools</p>
+            </div>
+            <div>
+                <img src="i5.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Mansions</p>
+            </div>
+            <div>
+                <img src="i6.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Treehouse</p>
+            </div>
+            <div>
+                <img src="i10.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Lakefront</p>
+            </div>
+            <div>
+                <img src="i11.jpeg" alt="" class="menuimg">
+                <p class="menudisc">OMG!</p>
+            </div>
+            <div>
+                <img src="i1.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Countryside</p>
+            </div>
+            <!-- <div>
+                <img src="i2.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Rooms</p>
+            </div>
+            <div>
+                <img src="i3.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Bed & Breakfast</p>
+            </div>
+            <div>
+                <img src="i4.jpeg" alt="" class="menuimg">
+                <p class="menudisc">Tiny homes</p>
+            </div> -->
+            <button class="filter"> <b>Filter</b> 
+                <svg class="filter-img" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                    <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <p class="display">
+                <b> Diaplay total before taxes </b>
+                <svg class="switch" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggle-on" viewBox="0 0 16 16">
+  <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+</svg>
+            </p>
+            
+        </div>
+        <div class="cardflex">
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h1.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h2.webp" alt="">
+                <h3 class="rating">4.9</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h3.webp" alt="">
+                <h3 class="rating">4.5</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                
+                
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h4.jpg" alt="">
+                <h3 class="rating">4.4</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                    <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h5.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h6.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h7.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h8.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h9.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h10.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h11.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                  <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                  </svg>
+                  <svg class="dots" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                <img class="card-img" src="h12.webp" alt="">
+                <h3 class="rating">4.8</h3>
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                <p class="name">Velhe, Torna-Rajgad,India</p>
+                <p class="name2">Mountain and pool views <br>23 Kilomerets awat <br> <b>$48900</b>,night</p>
+                <div class="flex">
+                    
+                </div>
+            </div>
+
+        </div>
+        
+        
+        
+    </div>
+    <div>
+        <button class="map">Show Map</button>
+    </div>
+</body>
+</html>
