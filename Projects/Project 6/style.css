@@ -1,0 +1,662 @@
+@media screen and (min-width: 580px) {
+    .navbar {
+        font-family: 'Nunito Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 180px;
+        margin: 16px 30px;
+    }
+
+    .nav-image {
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .nav-center{
+        display: none;
+    }
+    .nav-center-screen {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        border: 1px solid lightgrey;
+        box-shadow: 2px 2px 5px rgba(201, 201, 201, 0.5);
+        padding-left: 25px;
+        padding-right: 4px;
+        border-radius: 40px;
+        font-size: 14.5px;
+        cursor: pointer;
+        margin-left: 145px;
+        width: 300px;
+    }
+
+    .nav-center-screen:hover {
+        box-shadow: 2px 2px 5px rgba(140, 140, 140, 0.5);
+    }
+
+
+    .nav-center-p {
+        color: grey;
+    }
+
+    .nav-search-icon {
+        border: 1px solid none;
+        border-radius: 50%;
+        padding: 7px;
+        background-color: #FF385C;
+        color: white;
+
+    }
+
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+
+    .nav-right-box {
+        border: 1px solid lightgrey;
+        border-radius: 40px;
+        padding: 10px 12px;
+        align-items: center;
+        display: flex;
+        gap: 14px;
+    }
+
+    .nav-right-user-profile {
+        transform: scale(1.6);
+    }
+
+
+    /* container and card for content */
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 270px;
+        margin: 20px;
+        border: 1px solid none;
+        border-radius: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+        border-radius: 14px;
+    }
+
+    .listing-title {
+        font-size: 15px;
+        padding-top: 10px;
+        font-weight: 500;
+    }
+
+    .listing-rating {
+        font-size: 14px;
+        margin: 8px 0px;
+        align-items: center;
+
+    }
+
+    .listing-star {
+        transform: scale(0.8);
+    }
+
+    .card-title-rating {
+        display: flex;
+        gap: 140px;
+        align-items: center;
+    }
+
+    .card-title-rating-star {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .listing-distance {
+        font-size: 14.5px;
+        margin: 3px 0px;
+        color: grey;
+    }
+
+    .listing-date {
+        font-size: 14.5px;
+        margin: 4px 0px;
+        ;
+        color: grey;
+    }
+
+    .listing-price {
+        font-size: 15px;
+        margin: 10px 0px;
+        ;
+    }
+
+    /* making heart icon relative */
+
+    .card-header {
+        position: relative;
+    }
+
+    .card-header-icon {
+        position: absolute;
+        top: 0;
+        margin-left: -52px;
+        margin-top: 10px;
+        padding: 3px 10px;
+        width: 25px;
+    }
+
+
+    /* the menu below navbar */
+
+    .menu-container {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin: 20px 30px;
+
+    }
+
+    .menu-conatiner-image img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+    }
+
+    .menu-conatiner-image {
+        display: flex;
+        gap: 64px;
+    }
+
+    .menu-item {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+
+    }
+
+    .menu-container-filter {
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        width: 60px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 0px 12px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 12.5px;
+        cursor: pointer;
+
+    }
+
+    .menu-container-checkbox {
+        border: 1px solid lightgrey;
+        border-radius: 10px;
+        width: 180px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        padding: 0px 15px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 12.5px;
+        cursor: pointer;
+
+    }
+
+    .menu-container-checkbox-logo {
+        transform: scale(1.8);
+    }
+
+    /* footer css */
+
+    .end-info {
+        text-align: center;
+        padding: 14px 22px;
+        margin: 20px auto;
+        width: fit-content;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .end-info h3 {
+        margin-bottom: 30px;
+    }
+
+    .end-info-button {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 14px 22px;
+        margin: 20px auto;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+        cursor: pointer;
+    }
+
+
+    .site-footer {
+        background-color: #e4e4e4;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin-right: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+        padding: 3px;
+        color: rgb(86, 86, 86);
+    }
+
+    .footer-section ul li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+
+
+    .show-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px;
+        padding-right: 10px;
+        padding-left: 15px;
+        margin: 0px auto;
+        width: max-content;
+        background-color: #c7c7c7;
+        border-radius: 24px;
+        position: sticky;
+        bottom: 30px;
+        cursor: pointer;
+    }
+
+    .show-map-button:hover {
+        font-size: 17px;
+        transition-delay: 1ms;
+    }
+
+    .show-map-icon {
+        width: 16px;
+        margin-right: 5px;
+    }
+
+    .show-map-button {
+        text-align: center;
+        color: #050505;
+        margin-right: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+/* 
+css for mobile screens 
+media query for screens with a max-width of 580px
+ */
+@media screen and (max-width: 580px) {
+
+    .navbar {
+        font-family: 'Nunito Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 10px;
+        margin-left: 16px;
+    }
+
+    .nav-image {
+        display: none;
+    }
+    .hr-line{
+        display:none;
+    }
+
+    .nav-center {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid lightgrey;
+        box-shadow: 2px 2px 5px rgba(201, 201, 201, 0.5);
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 40px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 0;
+        margin-top: 10px;
+        width: max-content;
+    }
+    .nav-center-inner{
+        display: column;
+        gap:0px;
+    }
+    .nav-center-inner p{
+        margin: 0px;
+        margin-right: 35px;
+        padding: 4px;
+        padding-bottom: 0px;
+        padding-top: 6px !important;
+    }
+    .nav-center-p{
+        font-size: 12px;
+        margin: 0px;
+        padding: 4px;
+        padding-top: 0px;
+        padding-bottom: 10px !important;
+    }
+    .nav-search-icon {
+        border: 1px solid none;
+        border-radius: 50%;
+        padding: 7px;
+        background-color: #FF385C;
+        color: white;
+        transform: scale(1.2);
+
+    }
+
+    .nav-center-screen{
+        display: none;
+    }
+    .nav-right-globe-icon,
+    .nav-right-p {
+        display: none;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .nav-right-user-profile {
+        transform: scale(2);
+    }
+
+    .nav-right-box {
+        padding: 10px 12px;
+        align-items: center;
+        display: flex;
+        gap: 14px;
+    }
+
+    .nav-right-filter {
+        display: none;
+    }
+
+
+
+    /* menu property below the navbar */
+
+
+    .menu-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    }
+
+    .menu-conatiner-image img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-conatiner-image {
+        display: flex;
+        gap: 40px;
+    }
+
+    .menu-item {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 12px;
+        flex: 0 0 auto;
+        margin: 5px; 
+        padding: 5px;
+    }
+
+    .menu-container-filter {
+        display: none;
+    }
+
+    .menu-container-checkbox {
+        display: none;
+
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 16px;
+        flex-wrap: wrap;
+
+    }
+
+
+    /* container and card for content */
+
+    .container {
+        display: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px;
+        border: 1px solid none;
+        border-radius: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+
+    }
+
+    .card-image {
+        width: 100%;
+        height: 250px;
+        border-radius: 14px;
+    }
+
+    .listing-title {
+        font-size: 15px;
+        padding-top: 10px;
+        font-weight: 500;
+    }
+
+    .listing-rating {
+        font-size: 14px;
+        margin: 8px 0px;
+        align-items: center;
+
+    }
+
+    .listing-star {
+        transform: scale(0.8);
+    }
+
+    .card-title-rating {
+        display: flex;
+        gap: 140px;
+        align-items: center;
+    }
+
+    .card-title-rating-star {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .listing-distance {
+        font-size: 14.5px;
+        margin: 3px 0px;
+        color: grey;
+    }
+
+    .listing-date {
+        font-size: 14.5px;
+        margin: 4px 0px;
+        ;
+        color: grey;
+    }
+
+    .listing-price {
+        font-size: 15px;
+        margin: 10px 0px;
+        ;
+    }
+
+    /* making heart icon relative */
+
+    .card-header {
+        position: relative;
+    }
+
+    .card-header-icon {
+        position: absolute;
+        top: 0;
+        margin-left: -52px;
+        margin-top: 10px;
+        padding: 3px 10px;
+        width: 25px;
+    }
+
+
+    /* show map button css property */
+    .show-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0px;
+        padding-right: 10px;
+        padding-left: 15px;
+        margin: 0px auto;
+        width: max-content;
+        background-color: #c7c7c7;
+        border-radius: 24px;
+        position: sticky;
+        bottom: 30px;
+        cursor: pointer;
+    }
+    .show-map-icon {
+        width: 16px;
+        margin-right: 5px;
+    }
+
+    .show-map-button {
+        text-align: center;
+        color: #050505;
+        margin-right: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 550;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+
+    /* footer css */
+
+    .end-info {
+        text-align: center;
+        padding: 10px 22px;
+        padding-bottom: 25px;
+        margin: 8px auto;
+        width: fit-content;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .end-info h3 {
+        margin-bottom: 30px;
+    }
+
+    .end-info-button {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 14px 22px;
+        margin: 20px auto;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+        cursor: pointer;
+    }
+
+
+    .site-footer {
+        background-color: #e4e4e4;
+        padding: 20px;
+        display: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 0%;
+    }
+
+    .footer-section {
+        margin-right: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        padding-bottom: 12px;
+
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+        padding: 3px;
+        color: rgb(86, 86, 86);
+    }
+
+    .footer-section ul li:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+}
