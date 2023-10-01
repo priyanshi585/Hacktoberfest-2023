@@ -38,15 +38,19 @@ body{
 }
 
 #header-div .sign-in-btn button{
-    padding: 7px 17px 7px 17px;
+    padding: 7px 20px 7px 20px;
     background-color: #E50914;
     color: #FFFFFF;
     font-size: 16px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    width: 100%;
 }
-
+#header-div .sign-in-btn button:hover{
+    color: red;
+    background-color: #FFFFFF;
+}
 #header-div .header-right-div .language-option #language{
     margin-right:30px;
     font-size: 14px;
