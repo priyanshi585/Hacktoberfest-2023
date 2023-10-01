@@ -1,0 +1,256 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{margin-top: 10px;
+}
+.box{margin-top: -35px;
+    height: 350px;
+    background-color: whitesmoke
+
+}
+.title-imgbox{display: flexbox;
+    margin-left: 25%;
+    width: 1000px;
+    justify-content: center;
+    background-color: whitesmoke;
+
+}
+.title-imgbox2{display: flexbox;
+    margin-left: 25%;
+    width: 1000px;
+    justify-content: center;
+
+}
+.itembox{ 
+    display: flex;
+    gap: 40px;    
+}
+.boximg{width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.ttdiv{
+    width: 500px;
+}
+.htitle{padding-top: 30px;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+.caption{font-size: 18px;
+    color: rgb(79, 76, 76);
+    font-weight: 600;
+    text-align: center;
+
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inputdiv{padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 740px;
+    border: 1px solid lightgray;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+svg{width: 100%;
+}
+select{font-size: 15px;
+    font-weight: 200;
+    border: none;
+    width: 220px;
+    height: 35px;
+    color: lightgray;
+}
+select:focus{
+    outline: none;
+}
+input:focus {
+    outline: none;
+    /* box-shadow: 0 0 2px 2px rgba(0, 0, 255, 0.5);  */
+  }
+.txtbx{ border: none;
+    width: 400px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: lightgrey;
+
+}
+.dropdown{padding-right: 10px;
+    border-right: 1px solid gray;
+}
+option{
+    font-size: 15px;
+    font-weight: bold;
+}
+.logo{
+    height: 30px;
+}
+.leftbtns{padding-left: 40px;
+
+}
+.nlink{font-size: 20px;
+    font-weight: 400;
+    color: lightgrey;
+
+}
+.section{margin-top: 30px;
+    padding-left: 380px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+.subsection{display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius:50% ;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+.Sec-name{font-size: 26px;
+    color: red;
+    font-weight: 400;
+    text-align: center;
+
+}
+.sec2{font-size: 26px;
+    color: lightgray;
+    font-weight: 400;
+    text-align: center;}
+.hr1{ margin-left: 380px;
+    color: red;
+    background-color: red;
+  height: 2px;
+  width: 210px;
+  font-weight: bold; 
+}
+.hr2{ margin-top: -9px;
+    border: none;
+    height: 1px; 
+    color: rgb(142, 139, 139);
+    background-color: whitesmoke;
+}
+.secimg{height: 30px;
+    width: 30px;
+    border: none;
+
+}
+.btnflex{margin-top: 30px;
+    margin-left: 350px;
+    margin-bottom: 60px;
+    display: flex;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+.filterbtn{
+    border: 1px solid lightgray;
+    height: 45px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 17px;
+    color: lightgray;
+}
+
+.sbox{width: 450px;
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    padding: 15px;
+    position: relative;
+
+}
+.sbox-img{
+    border-radius: 30px;
+    width: 100%;
+}
+.overdiv1{position: absolute;
+    top: 180px;
+
+}
+.overdiv2{
+    position: absolute;
+    top: 200px;
+    right: 45px;
+    background-color: green;
+    width: 75px;
+    border-radius: 15px;
+
+}
+.overdiv3{position: absolute;
+    top: 35px;
+    left: 55px;
+
+}
+.overdesc{font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: royalblue;
+    padding: 10px;
+
+}
+.overdesc2{font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.overdesc3{font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(74, 72, 72, 0.655);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.h1-1{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.p1{
+    font-size: 35px;
+    color: lightgrey;
+}
+.p2{
+    font-size: 18px;
+    color: lightgrey;
+}
+hr{
+    color: whitesmoke;
+}
+.bottemdiv{position: relative;
+
+}
+.bimgdiv{position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 50px;
+}
+.box-img2{
+    width: 100%;
+}
+.bdesc{margin-left: 68px;
+
+}
+.title-imgbox3{
+    display: flexbox;
+    margin-left: 10%;
+    width: 1000px;
+    justify-content: center;
+}
